@@ -9,14 +9,14 @@ This documentation outlines the process of creating and configuring an Amazon We
 4. [Creating the VPC](#creating-the-vpc)
 5. [Creating the Subnets](#creating-the-subnets)
 6. [Creating and Associating the Route Tables to Subnets](#creating-and-associating-the-route-tables-to-subnets)
-7. Creating an Internet Gateway for the VPC
-8. Configuring and Associating Security Groups
-9. Configuring and Associating Network Access Control Lists
-10. Creating and Launching an Elastic Cloud Compute (EC2) on the Public Instance
-11. Create Flow Logs
-12. Validation and Testing
-13. Common Errors and Troubleshooting
-14. Conclusion
+7. [Creating an Internet Gateway for the VPC](#creating-an-internet-gateway-for-the-vpc)
+8. [Configuring and Associating Security Groups](#configuring-and-associating-security-groups)
+9. [Configuring and Associating Network Access Control Lists](#configuring-and-associating-network-access-control-lists)
+10. [Creating and Launching an Elastic Cloud Compute on the Frontend Subnet](#creating-and-launching-an-elastic-cloud-compute-on-the-frontend-subnet)
+11. [Create Flow Logs](#create-flow-logs)
+12. [Validation and Testing](#validation-and-testing)
+13. [Common Errors and Troubleshooting](#common-errors-and-troubleshooting)
+14. [Conclusion](#Conclusion)
 
 ## Introduction
 An Amazon Web Services (AWS) Virtual Private Cloud (VPC) is a logically isolated network that enables secure communication between AWS resources, the internet, and on-premises networks. Subnetting refers to the logical division of an IP address range and allows the VPC to be segmented into smaller networks for improved organization, security, and traffic management. Security Groups and Metwork Access Control Lists are network firewalls that filter inbound and outbound traffic preventing unauthorized access. EC2 is a web service provided by AWS that allows you to launch and manage virtual servers, called instances, in the cloud. These instances provide scalable computing capacity, letting you run applications without the need to own physical hardware.
@@ -160,6 +160,11 @@ All resources, including EC2 instances, subnets, flow logs, internet gateway, ne
 * The EC2 instance can now be accessed successfully, confirming that all configurations are working as expected and the connection is stable.
 
 ## Common Errors and Troubleshooting
+* NACL and Security Group Configuration Errors – Some rules initially blocked required traffic. This was resolved by carefully reviewing and correcting inbound and outbound rules to allow necessary protocols and   ports.
+* Availability Zone Mismatch During Subnet Creation – The subnet was initially created in a different availability zone than intended. This was resolved by verifying and recreating resources in the correct         availability zone.
+Issues were resolved through step-by-step troubleshooting, including checking network configurations, validating security settings, and testing connectivity after each change.
 
+## Conclusion
+This project demonstrates the successful configuration and deployment of a cloud instance with the required networking and security settings. The instance is properly associated with its subnet and security group, allowing secure remote access through RDP using the assigned public IP address. This setup confirms proper connectivity, access control, and operational readiness of the instance within the cloud environment.
 
 
