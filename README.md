@@ -162,6 +162,7 @@ All resources, including EC2 instances, subnets, flow logs, internet gateway, ne
 ## Common Errors and Troubleshooting
 * NACL and Security Group Configuration Errors – Some rules initially blocked required traffic. This was resolved by carefully reviewing and correcting inbound and outbound rules to allow necessary protocols and   ports.
 * Availability Zone Mismatch During Subnet Creation – The subnet was initially created in a different availability zone than intended. This was resolved by verifying and recreating resources in the correct         availability zone.
+
 Issues were resolved through step-by-step troubleshooting, including checking network configurations, validating security settings, and testing connectivity after each change.
 
 ## Conclusion
