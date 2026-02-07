@@ -1,7 +1,10 @@
 # AWS VIRTUAL PRIVATE CLOUD(VPC) AND NETWORK CONFIGURATION
 This documentation outlines the process of creating and configuring an Amazon Web Services (AWS) Virtual Private Cloud (VPC). It covers subnet design, route table configuration, and the implementation of network security using Security Groups and Network Access Control Lists (NACLs). The guide also demonstrates launching an EC2 instance in a public subnet, highlighting best practices for network segmentation, controlled internet access, and layered security within an AWS environment.
-<p align="center"> <img width="800" height="450" alt="vpc-Page-5 drawio (3)" src="https://github.com/user-attachments/assets/3050356a-d8e7-4edd-bede-fcbef170e768" />
 
+<p align="center"> <img width="900" height="500" alt="vpc-Page-5 drawio (1)" src="https://github.com/user-attachments/assets/bcd7c419-36bb-42b9-af1a-e767768acff0" />
+
+
+  
 ## Table Of Contents
 1. [Introduction](#introduction)
 2. [Pre requisites and Services Used](#pre-requisites-and-services-used)
