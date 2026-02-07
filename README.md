@@ -1,6 +1,6 @@
 # AWS VIRTUAL PRIVATE CLOUD(VPC) AND NETWORK CONFIGURATION
 This documentation outlines the process of creating and configuring an Amazon Web Services (AWS) Virtual Private Cloud (VPC). It covers subnet design, route table configuration, and the implementation of network security using Security Groups and Network Access Control Lists (NACLs). The guide also demonstrates launching an EC2 instance in a public subnet, highlighting best practices for network segmentation, controlled internet access, and layered security within an AWS environment.
-
+<p align="center"> <img width="800" height="450" alt="vpc-Page-5 drawio (3)" src="https://github.com/user-attachments/assets/3050356a-d8e7-4edd-bede-fcbef170e768" />
 
 ## Table Of Contents
 1. [Introduction](#introduction)
@@ -72,7 +72,7 @@ Planning the IP address space is a critical first step when designing an AWS Vir
 * On the VPC dashboard, select Route Table from the menu section.
 * Add the name and select the VPC you want to use for the route table.
 * Then click Create Route Table.
-* On the Route table page, select your newly created RTB and navigate to the actions tab. This contains a host of functions you can apply to your RTB. Select the option to make it the main RTB for the VPC and save.
+* On the Route table page, select your newly created RTB and navigate to the actions tab. This contains a host of functions you can apply to your RTB. Select the option to make it the main RTB for the VPC and      save.
 * The next step after making it the main RTB is to asssociate it to the public subnet. Select Edit Subnet Associations, check the box for public subnet and save association.
 
 <p align="center"> <img width="735" height="385" alt="Screenshot 2026-02-02 235248" src="https://github.com/user-attachments/assets/58045c7c-476d-4c1c-a92d-eda06d38b756" />
